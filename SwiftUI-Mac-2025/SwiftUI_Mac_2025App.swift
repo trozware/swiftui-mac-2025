@@ -37,20 +37,14 @@ struct SwiftUI_Mac_2025App: App {
 
         Divider()
 
-        Button {
+        Button("Web View Demo", systemImage: "network") {
           openWindow(id: "web_demo")
-        } label: {
-          Label("Web View Demo", systemImage: "network")
         }
-        Button {
+        Button("Text Editing Demo", systemImage: "textformat") {
           openWindow(id: "text_demo")
-        } label: {
-          Label("Text Editing Demo", systemImage: "textformat")
         }
-        Button {
+        Button("List Demo", systemImage: "list.clipboard") {
           openWindow(id: "list_demo")
-        } label: {
-          Label("List Demo", systemImage: "list.clipboard")
         }
       }
     }

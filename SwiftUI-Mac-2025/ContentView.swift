@@ -30,26 +30,20 @@ struct ContentView: View {
       ToolbarSpacer(.flexible)
 
       ToolbarItemGroup {
-        Button {
+        Button("Web", systemImage: "network") {
           openWindow(id: "web_demo")
-        } label: {
-          Label("Web", systemImage: "network")
         }
 
-        Button {
+        Button("Text", systemImage: "textformat") {
           openWindow(id: "text_demo")
-        } label: {
-          Label("Text", systemImage: "textformat")
         }
       }
 
       ToolbarSpacer(.fixed)
 
       ToolbarItem {
-        Button {
+        Button("List Demo", systemImage: "list.clipboard") {
           openWindow(id: "list_demo")
-        } label: {
-          Label("List Demo", systemImage: "list.clipboard")
         }
       }
     }
